@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "./account"
+    },
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "DockerRun.DisableDockerrc": true,
+    "DockerRun.Containers": [
+      "5b9618a82e87",
+      "83793185ad46"
+    ]
+  }
+}

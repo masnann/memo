@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-    "github.com/google/uuid"
-	"github.com/masnann/memo/model"
+	"github.com/google/uuid"
+	"github.com/masnann/memo/account/model"
 )
 
 // UserService acts as a struct for injecting an implementation of UserRepository
@@ -27,7 +27,11 @@ func NewUserService(c *USConfig) model.UserService {
 }
 
 func (s *UserService) Get(ctx context.Context, uid uuid.UUID) (*model.User, error) {
-    u, err := s.UserRepository.FindByID(ctx, uid)
+	u, err := s.UserRepository.FindByID(ctx, uid)
 
-    return u, err
+	return u, err
+}
+
+func (s *UserService) Signup(ctx context.Context, u *model.User) error {
+    panic("Method not implemented")
 }

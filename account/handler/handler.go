@@ -1,22 +1,22 @@
 package handler
 
 import (
+	"github.com/masnann/memo/account/model"
 	"net/http"
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/masnann/memo/model"
 )
 
 // Handler struct holds required services for handler to function
-type Handler struct{
+type Handler struct {
 	UserService model.UserService
 }
 
 // Config will hold services that will eventually be injected into this
 // handler layer on handler initialization
 type Config struct {
-	R *gin.Engine
+	R           *gin.Engine
 	UserService model.UserService
 }
 
@@ -42,12 +42,6 @@ func NewHandler(c *Config) {
 
 }
 
-
-func (h *Handler) SignUp(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"hello": "its sign up",
-	})
-}
 
 func (h *Handler) SignIn(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{

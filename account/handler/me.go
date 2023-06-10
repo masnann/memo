@@ -1,12 +1,11 @@
 package handler
 
 import (
+	"github.com/gin-gonic/gin"
+	"github.com/masnann/memo/account/model"
+	"github.com/masnann/memo/account/model/apperrors"
 	"log"
 	"net/http"
-
-	"github.com/gin-gonic/gin"
-	"github.com/masnann/memo/model"
-	"github.com/masnann/memo/model/apperrors"
 )
 
 func (h *Handler) Me(c *gin.Context) {

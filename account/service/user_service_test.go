@@ -3,14 +3,13 @@ package service
 import (
 	"context"
 	"fmt"
-	"testing"
-
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/masnann/memo/model"
-	"github.com/masnann/memo/model/mocks"
+	"github.com/masnann/memo/account/model"
+	"github.com/masnann/memo/account/model/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
+	"testing"
 )
 
 func TestGet(t *testing.T) {

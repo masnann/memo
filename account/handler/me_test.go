@@ -3,15 +3,15 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/masnann/memo/account/model"
+	"github.com/masnann/memo/account/model/apperrors"
+	"github.com/masnann/memo/account/model/mocks"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/masnann/memo/model"
-	"github.com/masnann/memo/model/apperrors"
-	"github.com/masnann/memo/model/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/masnann/memo/account/handler"
 	"log"
 	"net/http"
 	"os"
@@ -10,7 +11,6 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/masnann/memo/handler"
 )
 
 func main() {
